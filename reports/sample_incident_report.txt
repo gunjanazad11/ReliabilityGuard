@@ -1,0 +1,129 @@
+========================================================================
+RELIABILITYGUARD INCIDENT REPORT
+========================================================================
+Report generated: 2026-07-26 16:18:26 India Standard Time
+Log source: logs/sample_system.log
+
+Important note:
+This report contains rule-based probable-cause suggestions. It does not perform automatic or confirmed root-cause detection.
+
+Total detected incidents: 6
+========================================================================
+
+INCIDENT 1
+------------------------------------------------------------------------
+Date and time: 2026-07-26 09:05:42
+Detected problem: WARNING
+Severity: Medium
+Affected component: SYSTEM
+Log line: 3
+
+Original log message:
+2026-07-26 09:05:42 WARNING [SYSTEM] CPU usage crossed the configured threshold.
+
+Probable-cause suggestion:
+A process or workload may be consuming unusually high CPU resources.
+
+Suggested troubleshooting action:
+Open the process monitor, identify high-CPU processes and inspect the workload before restarting or stopping anything.
+
+========================================================================
+
+INCIDENT 2
+------------------------------------------------------------------------
+Date and time: 2026-07-26 09:07:10
+Detected problem: FAILED, ERROR
+Severity: High
+Affected component: DATABASE
+Log line: 4
+
+Original log message:
+2026-07-26 09:07:10 ERROR [DATABASE] Market-data insertion FAILED because the database was unavailable.
+
+Probable-cause suggestion:
+The database service may be unavailable, overloaded or using an invalid connection configuration.
+
+Suggested troubleshooting action:
+Check whether the database service is running, verify the connection string and credentials, and inspect database logs.
+
+========================================================================
+
+INCIDENT 3
+------------------------------------------------------------------------
+Date and time: 2026-07-26 09:10:55
+Detected problem: TIMEOUT
+Severity: High
+Affected component: MARKET_FEED
+Log line: 6
+
+Original log message:
+2026-07-26 09:10:55 TIMEOUT [MARKET_FEED] No financial-data response was received within five seconds.
+
+Probable-cause suggestion:
+The service may be responding slowly because of network latency, system overload, packet loss or an unavailable dependent service.
+
+Suggested troubleshooting action:
+Check network connectivity and latency, inspect service load, retry the request and review dependent services.
+
+========================================================================
+
+INCIDENT 4
+------------------------------------------------------------------------
+Date and time: 2026-07-26 09:12:08
+Detected problem: CONNECTION REFUSED, ERROR
+Severity: Critical
+Affected component: NETWORK
+Log line: 7
+
+Original log message:
+2026-07-26 09:12:08 ERROR [NETWORK] CONNECTION REFUSED while connecting to market-data service.
+
+Probable-cause suggestion:
+The destination service may not be running, may not be listening on the requested port, or a firewall may be rejecting the connection.
+
+Suggested troubleshooting action:
+Verify the hostname and port, confirm that the destination service is running, and inspect firewall rules.
+
+========================================================================
+
+INCIDENT 5
+------------------------------------------------------------------------
+Date and time: 2026-07-26 09:14:22
+Detected problem: FAILED
+Severity: High
+Affected component: AUTH_SERVICE
+Log line: 8
+
+Original log message:
+2026-07-26 09:14:22 FAILED [AUTH_SERVICE] User authentication request could not be completed.
+
+Probable-cause suggestion:
+The authentication service may be unavailable, or the request may contain invalid or expired credentials.
+
+Suggested troubleshooting action:
+Verify credentials or tokens, check the authentication service status and inspect related authentication logs.
+
+========================================================================
+
+INCIDENT 6
+------------------------------------------------------------------------
+Date and time: 2026-07-26 09:16:40
+Detected problem: WARNING
+Severity: Medium
+Affected component: DISK
+Log line: 9
+
+Original log message:
+2026-07-26 09:16:40 WARNING [DISK] Available disk space is below the recommended limit.
+
+Probable-cause suggestion:
+Disk usage may be high because of accumulated logs, temporary files, application data or insufficient storage.
+
+Suggested troubleshooting action:
+Check disk usage, remove unnecessary temporary files, archive old logs and confirm that sufficient storage remains.
+
+========================================================================
+
+Overall Status: ATTENTION REQUIRED
+
+End of report
