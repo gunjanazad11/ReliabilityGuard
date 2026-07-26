@@ -14,32 +14,32 @@ The project demonstrates concepts relevant to financial-data platforms and site-
 
 ### Reliability Overview
 
-![ReliabilityGuard Overview](screenshots/01_overview.png)
+![ReliabilityGuard Overview](screenshots/01_overview.png.png)
 
 ### System Health Monitoring
 
-![System Health](screenshots/02_system_health.png)
+![System Health](screenshots/02_system_health.png.png)
 
 ### Network Diagnostics
 
-![Network Diagnostics](screenshots/03_network_diagnostics.png)
+![Network Diagnostics](screenshots/03_network_diagnostics.png.png)
 
 ### Market Data Validation
 
-![Market Data Validation](screenshots/04_market_data_validation.png)
+![Market Data Validation](screenshots/04_market_data_validation.png.png)
 
 ### Log Analysis & Incident Report
 
-![Log Analysis](screenshots/05_log_analysis_&_incident_report.png)
+![Log Analysis](screenshots/05_log_analysis_&_incident_report.png.png)
 
 
 ### SQLite Incident History
 
-![Incident History](screenshots/06_incident_history.png)
+![Incident History](screenshots/06_incident_history.png.png)
 
 ### Automated Tests
 
-![Pytest Results](screenshots/07_pytest_results.png)
+![Pytest Results](screenshots/07_pytest_results.png.png)
  
 ---
 
